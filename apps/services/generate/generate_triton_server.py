@@ -136,6 +136,7 @@ class GenerateImage:
         input_images_in.set_data_from_numpy(self.image.astype(np.float16))
         mode_in.set_data_from_numpy(np.asarray([self.mode], dtype=np.int32))
 
+        logging.info("async infer ......")
         ctx = self.triton_client.async_infer(
             model_name=self.model_name,
             model_version=self.version,

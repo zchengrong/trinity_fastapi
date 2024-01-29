@@ -9,14 +9,14 @@ accesslog = "gunicorn_access.log"
 errorlog = "gunicorn_error.log"
 
 
-# gunicorn main:app -b 0.0.0.0:9000 --workers 10
-# gunicorn main:app -b 0.0.0.0:9001 --workers 10
-# gunicorn main:app -b 0.0.0.0:9002 --workers 10
-# gunicorn main:app -b 0.0.0.0:9003 --workers 10
-# gunicorn main:app -b 0.0.0.0:9004 --workers 10
-# gunicorn main:app -b 0.0.0.0:9005 --workers 10
-# gunicorn main:app -b 0.0.0.0:9006 --workers 10
-# gunicorn main:app -b 0.0.0.0:9007 --workers 10
-# gunicorn main:app -b 0.0.0.0:9008 --workers 10
-# gunicorn main:app -b 0.0.0.0:9009 --workers 10
-# gunicorn main:app -b 0.0.0.0:9010 --workers 10
+# gunicorn main:app -b 0.0.0.0:9000  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9001  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9002  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9003  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9004  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9005  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9006  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9007  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9008  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9009  -c gunicorn.py
+# gunicorn main:app -b 0.0.0.0:9010  -c gunicorn.py
