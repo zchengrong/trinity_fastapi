@@ -1,11 +1,22 @@
 daemon = True  # 是否守护
-bind = '0.0.0.0:9999'  # 绑定
-pidfile = 'gunicorn.pid'  # pid文件地址
 chdir = '.'  # 项目地址
 worker_class = 'uvicorn.workers.UvicornWorker'
-workers = 64
-threads = 64
+workers = 10
+threads = 10
 loglevel = 'debug'  # 日志级别
 access_log_format = '%(t)s %(p)s %(h)s "%(r)s" %(s)s %(L)s %(b)s %(f)s" "%(a)s"'
 accesslog = "gunicorn_access.log"
 errorlog = "gunicorn_error.log"
+
+
+# gunicorn main:app -b 0.0.0.0:9000 --workers 10
+# gunicorn main:app -b 0.0.0.0:9001 --workers 10
+# gunicorn main:app -b 0.0.0.0:9002 --workers 10
+# gunicorn main:app -b 0.0.0.0:9003 --workers 10
+# gunicorn main:app -b 0.0.0.0:9004 --workers 10
+# gunicorn main:app -b 0.0.0.0:9005 --workers 10
+# gunicorn main:app -b 0.0.0.0:9006 --workers 10
+# gunicorn main:app -b 0.0.0.0:9007 --workers 10
+# gunicorn main:app -b 0.0.0.0:9008 --workers 10
+# gunicorn main:app -b 0.0.0.0:9009 --workers 10
+# gunicorn main:app -b 0.0.0.0:9010 --workers 10
